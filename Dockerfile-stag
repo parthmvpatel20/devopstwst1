@@ -1,10 +1,5 @@
 FROM node:16.15.0
 
-ENV NODE_ENV=staging
-WORKDIR /app
-
-EXPOSE 9803
-
 RUN npm install --production
 
 COPY . .
